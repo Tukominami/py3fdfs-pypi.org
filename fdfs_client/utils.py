@@ -166,7 +166,7 @@ class Fdfs_ConfigParser(configparser.RawConfigParser):
                     sectname = mo.group('header')
                     if sectname in self._sections:
                         cursect = self._sections[sectname]
-                    elif sectname == DEFAULTSECT:
+                    elif sectname == 'DEFAULT':
                         cursect = self._defaults
                     else:
                         cursect = self._dict()
